@@ -1,0 +1,6 @@
+**/node_modules
+/configuration
+/mongo-db
+/postgres-data
+/redis-data
+/client/build
