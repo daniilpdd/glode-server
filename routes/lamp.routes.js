@@ -8,7 +8,7 @@ router.post(
     '/add',
     async (req, res) => {
         try {
-            const { lampId, title, lampType, login, list } = req.body
+            const { lampId, lampType, login, list } = req.body
 
             const user = await User.findOne({ login: login })
 
@@ -28,7 +28,6 @@ router.post(
             
             const lamp = new Lamp()
             lamp.lampId = lampId
-            lamp.title = title
             lamp.lampType = lampType
             lamp.userId = user.id
             lamp.list = list
