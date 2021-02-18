@@ -1,4 +1,4 @@
-FROM arm64v8/node
+FROM node
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
